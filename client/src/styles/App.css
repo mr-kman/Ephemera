@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+body {
+  margin: 0;
+  overscroll-behavior: none;
+  font-family: 'Courier New';
+  font-weight: 900;
+}
+
+input:focus {
+  outline: none !important;
+  border:2px solid #279E2C;
+  box-shadow: 0 0 10px #279E2C;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #24122B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #279E2C;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22532C;
+}
+
+.containerTrayOut {
+  position: absolute;
+  height: 100vh;
+  margin-left: 30vw;
+  width: calc(100vw - 30vw);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.user-name {
+  grid-row: 1;
+  grid-column: 3;
+  color: #279E2C;
+  align-self: start;
+  text-align: right;
+  margin: 0;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.sideBar {
+  display: flex;
+  background-color: #24122B;
+  height: 100vh;
+  width: 30vw;  
+  position: absolute;
+}
+
+.collapsedSideBar {
+  display: flex;
+  flex-direction: column;
+  background-color: #24122B;
+  height: 100vh;
+  width: 2.5vw;  
+  position: absolute;
+}
+
+.sidebar-navi-button {
+  margin-bottom: 5px;
+  height: 50px;
+  width: 100%;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.sidebar-navi-disabled {
+  cursor: default;
+}
+
+.sidebar-navi-button > svg > path {
+  fill: #279E2C;
+}
+
+.sidebar-navi-button:hover {
+  border: 1px solid #279E2C;
+  background-color: #279E2C;
+}
+
+.sidebar-navi-button:hover > svg > path {
+  fill: #3B0953;
+}
+
+.sidebar-navi-button:active > svg >path {
+  fill: #3c2e42;
+}
+
+.sidebar-navi-disabled > svg > path {
+  fill: lightgray;
+}
+
+.sidebar-navi-disabled:hover {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.sidebar-navi-disabled:hover > svg > path {
+  fill: lightgray;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}

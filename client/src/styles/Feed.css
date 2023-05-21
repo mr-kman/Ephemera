@@ -1,0 +1,88 @@
+.feedContainer {
+  padding-top: 50px;
+  position: relative;
+  margin: 0 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 50px);
+  overflow-y: scroll;
+  background-color: #24122B;
+}
+
+.feedCard {
+  margin-right: 9px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #302038;
+  margin-bottom: 5px;
+  height: auto;
+  width: auto;
+  border: 1px solid black;
+}
+
+.msgContent { 
+  color:#8fab90;
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.msgDisplayName {
+  width: 35%;
+}
+
+.msgDetails {
+  font-size: 12px;
+  color:#6f8670;
+  margin: 0 10px;
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+}
+
+.vote-container{
+  flex-grow: 1;
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+}
+
+.upvote {
+  height: auto;
+  width: 18px;
+  margin-right: 5px;
+  align-self: left;
+  cursor: pointer;
+}
+
+.upvote > svg > path {
+  fill: #279E2C;
+}
+
+.upvote:hover  > svg > path{
+  fill: #5D105C;
+}
+
+.upvote:active  > svg > path{
+  fill: #3c2e42;
+}
+
+.msgUploadTime {
+  width: 100px;
+}
+
+.upvote-disabled {
+  cursor: default;
+}
+
+.upvote-disabled > svg >path {
+  fill: grey;
+}
+
+.upvote-disabled:hover > svg > path {
+  fill: grey;
+}
+
+.upvote-disabled:active > svg > path {
+  fill: grey;
+}

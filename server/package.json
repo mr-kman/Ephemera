@@ -1,0 +1,36 @@
+{
+  "name": "rage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server.js",
+    "express-dev": "nodemon ./src/server.js",
+    "migrate-latest": "npx knex migrate:latest --knexfile knexfile.js",
+    "migrate-down": "npx knex migrate:down --knexfile serverknexfile.js",
+    "seed-data": "npx knex seed:run --knexfile server knexfile.js",
+    "build": "npm install && npm run migrate-latest && npm run seed-data"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Screamtothevoid/Rage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Screamtothevoid/Rage/issues"
+  },
+  "homepage": "https://github.com/Screamtothevoid/Rage#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "knex": "^2.4.2",
+    "moment": "^2.29.4",
+    "nodemon": "^2.0.20",
+    "pg": "^8.9.0",
+    "socket.io": "^4.6.1"
+  }
+}

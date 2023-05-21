@@ -1,0 +1,118 @@
+/**
+ * @param { import("knex").Knex } knex
+ * @returns { Promise<void> }
+ */
+exports.seed = async function (knex) {
+  // Deletes ALL existing entries
+  await knex('message').del();
+  await knex('message').insert([
+    {
+      id: -20,
+      fb_uid: 'noobmaster69',
+      messagePlain: 'Thor is such a fucking bully!',
+      messageFilter: 'Thor is such a ******* bully!',
+      messageSize: 1,
+      uploadTime: '1988-07-25 22:43:07',
+      likeCount: 1,
+    },
+    {
+      id: -19,
+      fb_uid: 'thestudent',
+      messagePlain: 'Why would anyone use a language that is not Rust?',
+      messageFilter: 'Why would anyone use a language that is not Rust?',
+      messageSize: 2,
+      uploadTime: '2023-01-25 13:50:29',
+      likeCount: 4,
+    },
+    {
+      id: -18,
+      fb_uid: 'thestudent',
+      messagePlain: 'Calculus is kicking my ass!',
+      messageFilter: 'Calculus is kicking my ***!',
+      messageSize: 1,
+      uploadTime: '2023-02-02 23:50:29',
+      likeCount: 5,
+    },
+    {
+      id: -17,
+      fb_uid: 'thecommuter',
+      messagePlain: 'Why is the B train always late...',
+      messageFilter: 'Why is the B train always late...',
+      messageSize: 5,
+      uploadTime: '2021-09-25 13:43:07',
+      likeCount: 33,
+    },
+    {
+      id: -16,
+      fb_uid: 'thecoder',
+      messagePlain: 'FOR THE LOVE OF GOD USE SEMICOLONS',
+      messageFilter: 'FOR THE LOVE OF GOD USE SEMICOLONS',
+      messageSize: 28,
+      uploadTime: '2023-02-01 13:43:07',
+      likeCount: 999,
+    },
+    {
+      id: -15,
+      fb_uid: 'thegamer',
+      messagePlain: 'My clan sucks and I need to quit.',
+      messageFilter: 'My clan sucks and I need to quit.',
+      messageSize: 13,
+      uploadTime: '2023-01-25 11:55:07',
+      likeCount: 80,
+    },
+    {
+      id: -14,
+      fb_uid: 'thecoder',
+      messagePlain: 'Grid is so dumb, why do people keep using it?',
+      messageFilter: 'Grid is so dumb, why do people keep using it?',
+      messageSize: 1,
+      uploadTime: '2022-07-30 18:43:10',
+      likeCount: 1,
+    },
+    {
+      id: -13,
+      fb_uid: 'thecoder',
+      messagePlain: 'Why did Heroku charge me for an extra server??',
+      messageFilter: 'Why did Heroku charge me for an extra server??',
+      messageSize: 1,
+      uploadTime: '2018-10-25 13:56:07',
+      likeCount: 33,
+    },
+    {
+      id: -12,
+      fb_uid: 'thegamer',
+      messagePlain: 'Raiding is such a WASTE OF TIME!',
+      messageFilter: 'Raiding is such a WASTE OF TIME!',
+      messageSize: 28,
+      uploadTime: '2020-12-25 01:43:07',
+      likeCount: 33,
+    },
+    {
+      id: -11,
+      fb_uid: 'thecoder',
+      messagePlain: 'Render is such hot garbage.',
+      messageFilter: 'Render is such hot garbage.',
+      messageSize: 1,
+      uploadTime: '2021-12-25 01:43:07',
+      likeCount: 6,
+    },
+    {
+      id: -10,
+      fb_uid: 'thecoder',
+      messagePlain: 'Why is react so annoying?',
+      messageFilter: 'Why is react so annoying?',
+      messageSize: 1,
+      uploadTime: '2022-12-8 01:43:07',
+      likeCount: 5,
+    },
+    {
+      id: -9,
+      fb_uid: 'thestudent',
+      messagePlain: 'Why do people like Highball? Its so damn gross!',
+      messageFilter: 'Why do people like Highball? Its so **** gross!',
+      messageSize: 1,
+      uploadTime: '2022-1-25 01:43:07',
+      likeCount: 3,
+    },
+  ]);
+};

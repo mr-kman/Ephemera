@@ -1,0 +1,64 @@
+button {
+  width: 30%;
+  background-color: #279E2C;
+  border: 2px solid #24122B;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  height: auto;
+}
+
+button:hover {
+  background: #24122B;
+  color: #279E2C;
+  border: 2px solid #279E2C;
+  box-sizing: border-box;
+}
+
+button:active {
+  background: #3c2e42;
+}
+
+label {
+  color: #279E2C;
+}
+
+.logout {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.btnContainer {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  background-color: #24122B;
+  justify-content: center;
+  height: auto;
+  z-index: 99999999;
+}
+
+.close-btn {
+  z-index: 9999;
+  width: 30px;
+  height: auto;
+  border: 1px solid transparent;
+  justify-self: right;
+}
+
+.close-btn > svg > path {
+  fill: #279E2C;
+}
+
+.close-btn:hover {
+  border: 1px solid #279E2C;
+  background-color: #279E2C;
+}
+
+.close-btn:hover > svg > path {
+  fill: #3B0953;
+}
+
+.close-btn:active > svg >path {
+  fill: #3c2e42;
+}
