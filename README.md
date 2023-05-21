@@ -64,7 +64,6 @@ Here's why:
 
 ### Built With
 
-- [![Next][next.js]][next-url]
 - [![React][react.js]][react-url]
 - [![Firebase][firebase.js]][firebase-url]
 - [![Node][node.js]][node-url]
