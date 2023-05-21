@@ -296,9 +296,9 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-- Robyn Snook - [@Moocau](https://github.com/Moocau) - snook.robyn@gmail.com
-- Takuya Stern - [@TrenchTemplar](https://github.com/TrenchTemplar) - AndrewTakuya@gmail.com
-- Kenneth Man - [@kman-cc](https://github.com/kman-cc) - kenneth_man@icloud.com
+- Robyn [@Moocau](https://github.com/Moocau)
+- Takuya [@TrenchTemplar](https://github.com/TrenchTemplar)
+- Ken [@kman-cc](https://github.com/kman-cc)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
