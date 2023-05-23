@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import '../styles/account.css';
 import firebase from 'firebase/compat/app';
 import {

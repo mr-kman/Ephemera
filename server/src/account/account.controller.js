@@ -2,8 +2,7 @@ const accountModel = require('./account.model');
 
 module.exports = {
   async save(req, res) {
-    const { uid, displayName, stsTokenManager, profanity, anonymous } =
-      req.body;
+    const { uid, displayName, profanity, anonymous } = req.body;
 
     const payload = {
       uid: uid,

@@ -11,8 +11,6 @@ const validateProps = validProps([
   'likeCount',
 ]);
 
-//const validateRequired = requiredProps(['email', 'last_name', 'postal_code']);
-
 const MESSAGE_TABLE = 'message';
 const INTERACTION_TABLE = 'interaction';
 

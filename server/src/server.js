@@ -1,6 +1,5 @@
 require('dotenv').config();
 const express = require('express');
-const knex = require('./knex');
 const app = express();
 const admin = require('firebase-admin');
 const cors = require('cors');

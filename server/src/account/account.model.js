@@ -1,23 +1,10 @@
 const knex = require('../knex');
-const { validProps, requiredProps } = require('../util/validation');
-
-const validateProps = validProps([
-  'uid',
-  'displayName',
-  'userToken',
-  'profanity',
-  'anonymous',
-]);
-
-//const validateRequired = requiredProps(['email', 'last_name', 'postal_code']);
-
 const USER_TABLE = 'userlibrary';
 
 module.exports = {
   USER_TABLE,
 
   create(user) {
-    //validateRequired(validateProps(order));
     return knex(USER_TABLE)
       .insert(user)
       .catch(function (error) {
